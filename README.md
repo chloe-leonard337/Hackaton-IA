@@ -32,24 +32,29 @@ Phi-3.5-Financial
 ```bash
 git clone https://github.com/YNOV-GROUPE-6/Hackaton-IA
 cd Hackaton-IA
-
-python3 -m venv venv
-source venv/bin/activate
-
-pip install fastapi uvicorn requests
 ```
 
+### 2. Backend (Python)
 
-### 2. Lancement du serveur
-
+```bash
+cd app
+pip install -r requirements.txt
+python -m uvicorn main:app --reload
 ```
-uvicorn app.main:app --reload --port 8000
-```
-
-### 3. Accès 
 
 - API : http://localhost:8000
 - Documentation interactive : http://localhost:8000/docs
+
+### 3. Frontend (React)
+
+Dans un second terminal, depuis la racine du projet :
+
+```bash
+npm install
+npm run dev
+```
+
+- Interface : http://localhost:5173
 
 
 ## Endpoints
