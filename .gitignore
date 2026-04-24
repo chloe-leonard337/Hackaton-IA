@@ -12,17 +12,37 @@ coverage/
 # Python
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
 *.egg-info/
 .venv/
 venv/
-.pytest_cache/
+
+# Logs
+*.log
+logs/
+temp/
 
 # IDE
 .idea/
 .vscode/
 *.suo
 *.user
+*.swp
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Modèles IA lourds
+models/
+*.gguf
+*.bin
+*.safetensors
+
+# Datasets
+medical_dataset/
+datasets/
+
+# Docker
+*.pid
